@@ -20,6 +20,9 @@
     left:140px;
     top:140px;
     border-radius: 99px;
+    transition: all .4s cubic-bezier(0.06, 1.01, 0.63, 0.81);
+    transform-origin: left;
+    
     
 }
 
@@ -27,8 +30,6 @@
     width:120px;
     height:2px;
     background-color: darkviolet;
-    transform-origin: left;    
-    transform: rotateZ(60deg);
     
 }
 #minBar{
