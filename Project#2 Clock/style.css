@@ -1,0 +1,57 @@
+
+
+#clock{
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(-90deg);
+    width:280px;
+    height: 280px;
+    border-radius:50%;
+    border: solid 5px goldenrod;
+}
+
+#secBar,
+#minBar,
+#hourBar,
+#dot{
+    position:absolute;
+    left:140px;
+    top:140px;
+    border-radius: 99px;
+    
+}
+
+#secBar{
+    width:120px;
+    height:2px;
+    background-color: darkviolet;
+    transform-origin: left;    
+    transform: rotateZ(60deg);
+    
+}
+#minBar{
+    width:100px;
+    height:3px;
+    background-color:darkorange;
+    z-index:-1;
+    
+}
+#hourBar{
+    width:80px;
+    height: 6px;
+    background-color: seagreen;
+    z-index: -2;
+}
+#dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background-color: #1D1A1A;
+    transform-origin: center;
+    z-index:-3;
+    left:134px;
+    top:134px;
+    
+}
