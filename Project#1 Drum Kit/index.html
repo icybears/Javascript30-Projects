@@ -63,12 +63,16 @@
         keys.forEach(function(key) {
 
             key.addEventListener('transitionend', function(e) {
+
+                if(e.propertyName !== 'transform'){
+                    return;
+                }
+
                 key.classList.remove('playing');
+                
             })
 
         })
-
-
 
           window.addEventListener('keydown', function(e){
 
@@ -81,7 +85,6 @@
                   audio.play();
 
                  audioDiv.classList.add('playing');
-                console.log(audioDiv);
 
               }
               
